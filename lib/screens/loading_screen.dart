@@ -7,6 +7,8 @@ class LoadingScreen extends StatefulWidget {
 }
 
 Future<void> getLocation() async {
+  final permission = await Geolocator.requestPermission();
+
   Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
   print(position);
 }
