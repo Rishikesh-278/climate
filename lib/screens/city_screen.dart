@@ -51,5 +51,3 @@ class _CityScreenState extends State<CityScreen> {
     );
   }
 }
-
-
